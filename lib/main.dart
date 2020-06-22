@@ -8,7 +8,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       title: "Stacked Template",
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.deepOrange),
+      theme: ThemeData(primarySwatch: Colors.deepOrange, fontFamily: 'Jost'),
       home: Container(),
     );
   }
