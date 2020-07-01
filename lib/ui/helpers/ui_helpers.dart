@@ -28,27 +28,32 @@ class UIHelpers {
   SizedBox horizontalSpaceMedium;
   SizedBox horizontalSpaceHigh;
 
+  //Colors based on theme
+  Color background;
+  Color textPrimary;
+  Color textSecondary;
+  Color canvas;
+
   UIHelpers.fromContext(BuildContext context) {
     var mediaQuery = MediaQuery.of(context);
 
     var screenWidth = mediaQuery.size.width;
     var screenHeight = mediaQuery.size.height;
 
+    var theme = Theme.of(context);
+
     scalingHelper = ScalingHelper(width: screenWidth);
 
     headline = TextStyle(
         fontWeight: FontWeight.bold,
-        fontFamily: 'Quicksand',
         fontSize: scalingHelper.size(28));
 
     title = TextStyle(
         fontWeight: FontWeight.w600,
-        fontFamily: 'Quicksand',
         fontSize: scalingHelper.size(20));
 
     body = TextStyle(
         fontWeight: FontWeight.w600,
-        fontFamily: 'Quicksand',
         fontSize: scalingHelper.size(18));
 
     blockSizeHorizontal = screenWidth / 100;
@@ -73,5 +78,10 @@ class UIHelpers {
     horizontalSpaceHigh = SizedBox(
       width: blockSizeHorizontal * 11,
     );
+
+    background = theme.backgroundColor;
+    textPrimary = theme.textTheme.bodyText1.color;
+    textSecondary = theme.disabledColor;
+    canvas = theme.canvasColor;
   }
 }

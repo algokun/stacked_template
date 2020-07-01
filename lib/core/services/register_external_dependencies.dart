@@ -1,3 +1,4 @@
+import 'package:http/http.dart';
 import 'package:injectable/injectable.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:stacked_services/stacked_services.dart';
@@ -15,4 +16,7 @@ abstract class RegisterDependencies {
 
   @preResolve
   Future<SharedPreferences> get prefs => SharedPreferences.getInstance();
+
+  @singleton
+  Client get client => Client();
 }

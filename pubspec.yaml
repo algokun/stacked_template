@@ -36,6 +36,9 @@ dependencies:
   # premium icons
   flutter_feather_icons: ^1.0.3
 
+  # http
+  http: ^0.12.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
