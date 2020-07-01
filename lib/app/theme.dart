@@ -8,7 +8,7 @@ mixin GlobalTheme {
 
   getAppTheme(BuildContext context, {bool lightThemeEnabled = true}) {
     var textTheme = Theme.of(context).textTheme.apply(
-        fontFamily: 'Rubik',
+        fontFamily: 'Lexend Deca',
         bodyColor: _getTextColor(lightThemeEnabled),
         decorationColor: _getTextColor(lightThemeEnabled));
 

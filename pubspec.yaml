@@ -33,6 +33,9 @@ dependencies:
   # for reactive state
   observable_ish: ^2.1.4
 
+  # premium icons
+  flutter_feather_icons: ^1.0.3
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -49,11 +52,7 @@ flutter:
   uses-material-design: true
 
   fonts:
-    - family: Jost
+    - family: Lexend Deca
       fonts:
-        - asset: assets/fonts/Jost-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/Jost-Medium.ttf
-          weight: 500
-        - asset: assets/fonts/Jost-Regular.ttf
+        - asset: fonts/LexendDeca-Regular.ttf
           weight: 400
