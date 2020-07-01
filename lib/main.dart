@@ -1,15 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:stacked_template/ui/screens/main/main.dart';
 
-void main() => runApp(MainApp());
+import 'app/locator.dart';
 
-class MainApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "Stacked Template",
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.deepOrange, fontFamily: 'Jost'),
-      home: Container(),
-    );
-  }
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await setupLocator();
+  runApp(MainApp());
 }

@@ -27,6 +27,12 @@ dependencies:
   injectable: ^0.4.0+1
   get_it: ^4.0.2
 
+  # for local data
+  shared_preferences: ^0.5.7+3
+
+  # for reactive state
+  observable_ish: ^2.1.4
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

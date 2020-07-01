@@ -7,7 +7,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:auto_route/auto_route.dart';
-import 'package:stacked_template/ui/views/home/home_view.dart';
+import 'package:stacked_template/ui/screens/home/home_view.dart';
 
 abstract class Routes {
   static const homeView = '/home-view';
