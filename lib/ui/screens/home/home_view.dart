@@ -53,9 +53,7 @@ class HomeView extends StatelessWidget {
                 .map(
                   (homeViewItem) => BottomNavigationBarItem(
                     icon: Icon(homeViewItem.icon),
-                    title: Text(
-                      homeViewItem.title.toUpperCase(),
-                    ),
+                    label: homeViewItem.title.toUpperCase(),
                   ),
                 )
                 .toList(),
